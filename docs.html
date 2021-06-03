@@ -91,24 +91,37 @@
         </div>
       </div>
     </section>
-    <br>
+    <br />
     <!--Works Display-->
     <h1 class="text-center">My Work</h1>
-    <br>
+    <br />
     <div id="app">
-        <div class="card-columns ">
-            <div class="card" v-for='card in cards'>
-                <div class="card-title text-center text-lg">{{ card.title }}</div>
-                <div class="card-body" >
-                    <img :src="`./img/${card.img}`" alt="" class="mx-auto d-block" style="width: fit-content; height: 223px;" v-if="!videoMethod(card)">
-                    <video :src="`./img/${card.VideoPlaybackQuality}`" controls loop autoplay style="width: fit-content" class="mx-auto d-block" alt="" v-else></video>
-
-                </div>
-            </div>
+      <div class="card-columns">
+        <div class="card" v-for="card in cards">
+          <div class="card-title text-center text-lg">{{ card.title }}</div>
+          <div class="card-body">
+            <img
+              :src="`./img/${card.img}`"
+              alt=""
+              class="mx-auto d-block"
+              style="width: fit-content; height: 223px"
+              v-if="!videoMethod(card)"
+            />
+            <video
+              :src="`./img/${card.VideoPlaybackQuality}`"
+              controls
+              loop
+              autoplay
+              style="width: fit-content"
+              class="mx-auto d-block"
+              alt=""
+              v-else
+            ></video>
+          </div>
         </div>
+      </div>
     </div>
 
-   
     <!--Footer-->
     <footer
       class="footer bg-dark py-5"
@@ -156,9 +169,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
-      $("#year").text(new Date().getFullYear());
+      $('#year').text(new Date().getFullYear());
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="./src/app.js"></script>
+    <script src="./src/docs.js"></script>
   </body>
 </html>
