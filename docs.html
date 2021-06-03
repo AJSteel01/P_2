@@ -23,17 +23,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
-    <title>Project 2</title>
+    <title>ANANDCorps|docs</title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
+    <!--Navbar-->
     <div class="navbar">
       <div class="container flex">
         <h1 class="logo" style="font-size: 40px">ANAND Corps.</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
+            <li><a href="features.html">Skills</a></li>
             <li><a href="docs.html">Docs</a></li>
           </ul>
         </nav>
@@ -48,7 +49,7 @@
         <img src="img/ANAND Corps..png" alt="" />
       </div>
     </section>
-
+    <!--About Anand Corps -->
     <section class="docs-main my-4">
       <div class="container grid">
         <div class="card bg-light p-3">
@@ -91,7 +92,7 @@
       </div>
     </section>
     <br>
-
+    <!--Works Display-->
     <h1 class="text-center">My Work</h1>
     <br>
     <div id="app">
@@ -107,124 +108,8 @@
         </div>
     </div>
 
-    <!-- <div class="card">
-        <h1>My Docs</h1>
-        <div class="card-body">
-            <form>
-                <div class="custom-file">
-                    <input class="custom-file-input "type="file" id="myfile" multiple="true">
-                    <label class="custom-file-label" for="myfile">Choose file</label>
-                </div>
-            </form>
-        </div>
-    </div> -->
-
-    <!-- <section id="gallery" class="py-5">
-      <div class="container">
-        <h1 class="text-center">Photo Gallery</h1>
-        <p class="text-center">Check out our photos</p>
-        <div class="row mb-4">
-          <div class="col-md-4">
-            <a
-              href="./img/finance.jpeg"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="560"
-              data-width="560"
-            >
-              <img
-                src="./img/finance.jpeg"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a
-              href="./img/work_1.jpeg"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="561"
-              data-width="561"
-            >
-              <img
-                src="./img/work_1.jpeg"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a
-              href="./img/work_2.jpeg"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="562"
-              data-width="562"
-            >
-              <img
-                src="./img/work_2.jpeg"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-md-4">
-            <a
-              href="./img/work_3.jpeg"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="563"
-              data-width="563"
-            >
-              <img
-                src="./img/work_3.jpeg"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a
-              href="https://www.youtube.com/embed/HzENN00Wzy4"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="564"
-              data-width="564"
-            >
-              <img
-                src="https://images.financialexpress.com/2020/10/five-important-things-about-investing-in-equities-01.jpg"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a
-              href="https://www.youtube.com/embed/EqcdU87aIIo"
-              data-toggle="lightbox"
-              data-gallery="img-gallery"
-              data-height="565"
-              data-width="565"
-            >
-              <img
-                src="https://tradingqna.com/uploads/default/original/3X/4/5/45e6c41276a2abaefa73113ee9438b1f43186c50.png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
+   
+    <!--Footer-->
     <footer
       class="footer bg-dark py-5"
       style="background-color: rgba(31, 24, 24, 0.788)"
@@ -272,13 +157,6 @@
 
     <script>
       $("#year").text(new Date().getFullYear());
-
-      //for showcasing work
-
-      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./src/app.js"></script>

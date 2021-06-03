@@ -16,6 +16,7 @@ body{
     font-family: 'Staatliches', cursive; 
     color:rgb(94, 82, 82);
     line-height: 1.6;
+    background-color: rgba(248, 240, 240, 0.781);
 }
 
 ul{
@@ -43,6 +44,7 @@ img{
 }
 .navbar{
     background-color: var(--primary-color);
+    background-color:rgba(0, 0,0, 0.9)!important    ;
     color:whitesmoke;
     height: 100px;
 }
@@ -443,6 +445,11 @@ img{
     }
     .navbar ul{
             padding:10px;
-            background-color: rgba(0,0,0,0.1);
+            background-color: rgba(0,0,0,0.1)!important;
         }
     }
+
+    #testimonials{
+        overflow: hidden;
+    }
+    

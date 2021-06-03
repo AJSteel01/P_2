@@ -1,3 +1,5 @@
+const url = 'http://localhost:3000';
+
 const app = new Vue({
   el: '#app',
   data: {
@@ -35,3 +37,33 @@ const app = new Vue({
     }
   }
 })
+
+
+const app2 = new Vue({
+  el: '#form-vue',
+  data: {
+    name: '',
+    skills: '',
+    email: ''
+  },
+  methods: {
+    onSubmit: async () => {
+      const postObj = {
+        name: this.name,
+        skills: this.skills,
+        email: this.email
+      }
+
+      const response = await fetch(url + '/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postObj)
+      });
+
+      
+    }
+  }
+})
+
