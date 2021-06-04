@@ -52,6 +52,7 @@ const app2 = new Vue({
         name: this.name,
         skills: this.skills,
         email: this.email
+        
       }
 
       const response = await fetch(url + '/form', {

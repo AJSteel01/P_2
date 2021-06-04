@@ -37,23 +37,25 @@
             <div class="showcase-form card">
                 <h2>Tell me What you got</h2>
                 <div id="form-vue">
-                <form @submit.prevent="onSubmit">
+                <form @submit.prevent="onSubmit" name="contactform">
                     <div class="form-contract">
-                        <input type="text" name="name" placeholder="Name" v-model="name" required>
+                        <input type="text" id="name" name="name" placeholder="Name" v-model="name" required>
 
                     </div>
                     <div class="form-contract">
-                        <input type="text" name="company" placeholder="Skills" v-model="skills" required>
+                        <input type="text" id="mySkills" name="company" placeholder="Skills" v-model="skills" required>
                         
                     </div>
                     <div class="form-contract">
-                        <input type="email" name="email" placeholder="Email" v-model="email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" v-model="email" required>
                         
                     </div>
                     <br>
                     <br>
-                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="submit" value="Send" id="submit" class="btn btn-primary">
+                    <span hidden class="success">Thank's for submitting the form</span>
                 </form>
+                
               </div>
             </div>
         </div>
@@ -225,11 +227,19 @@
         crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="./src/app.js"></script>
 
       <script>
           //To get year 
           $('#year').text(new Date().getFullYear());
+          //Success message on form submission
+      
+          $('form').on('submit',function(){
+           alert('submitted');
+          });
+
+
       </script>
 </body>
 </html>
