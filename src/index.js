@@ -7,6 +7,7 @@ const app2 = new Vue({
       name: '',
       skills: '',
       email: '',
+      submitted: false
     };
   },
   methods: {
@@ -16,7 +17,7 @@ const app2 = new Vue({
         skills: this.skills,
         email: this.email,
       };
-
+      
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -24,12 +25,14 @@ const app2 = new Vue({
         },
         body: JSON.stringify(returnObj),
       }).then(res => res.json());
-
+      
       console.log(response);
-
+      
       this.name = '';
       this.skills = '';
       this.email = '';
+      this.submitted = true;
+      
     },
   },
 });
